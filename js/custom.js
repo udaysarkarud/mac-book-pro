@@ -26,7 +26,7 @@ document.getElementById('free-delivery').addEventListener('click', function () {
     extraProduct('delivery', 0)
 })
 
-document.getElementById('chargeed-delivery').addEventListener('click', function () {
+document.getElementById('charged-delivery').addEventListener('click', function () {
     extraProduct('delivery', 20)
 })
 
