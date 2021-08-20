@@ -1,10 +1,3 @@
-// Extra variant Price
-function extraProduct(category, cost) {
-    const extraMemory = document.getElementById('cost-' + category)
-    extraMemory.innerText = cost
-    totalPrice()
-}
-
 // Buttons for memory
 document.getElementById('8gb-memory').addEventListener('click', function () {
     extraProduct('memory', 0)
@@ -37,16 +30,23 @@ document.getElementById('chargeed-delivery').addEventListener('click', function 
     extraProduct('delivery', 20)
 })
 
+// Extra variant Price
+function extraProduct(category, price) {
+    const extraProductPrice = document.getElementById('cost-' + category)
+    extraProductPrice.innerText = price
+    totalAmount()
+}
+
 // total section
-function totalPrice() {
+function totalAmount() {
     const basePrice = parseInt(document.getElementById('base-price').innerText)
     const extraMemory = parseInt(document.getElementById('cost-memory').innerText)
     const extraStorage = parseInt(document.getElementById('cost-storage').innerText)
     const extraDeliver = parseInt(document.getElementById('cost-delivery').innerText)
-    const totalPriceSum = document.getElementById('total-price')
+    const totalPrice = document.getElementById('total-price')
     const grandTotal = document.getElementById('grand-total')
-    totalPriceSum.innerText = basePrice + extraMemory + extraStorage + extraDeliver
-    grandTotal.innerText = totalPriceSum.innerText
+    totalPrice.innerText = basePrice + extraMemory + extraStorage + extraDeliver
+    grandTotal.innerText = totalPrice.innerText
 }
 
 // promo code section
@@ -60,5 +60,3 @@ document.getElementById('promo-btn').addEventListener('click', function () {
     promoInput.value = ''
 
 })
-
-

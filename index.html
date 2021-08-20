@@ -17,13 +17,13 @@
         <section class="container my-5">
             <div class="row gx-5">
                 <!-- image column start-->
-                <div class="col-5">
+                <div class="col-lg-5">
                     <img class="img-fluid" src="images/mac.png" alt="">
                 </div>
                 <!-- image column end-->
 
                 <!-- Device Details column start-->
-                <div class="col-7">
+                <div class="col-lg-7">
                     <!-- Device article section start-->
                     <article>
                         <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
@@ -41,7 +41,7 @@
                         <div class="row my-4">
                             <h6 class="fw-bold">Memory</h6>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12">
                                     <button id="8gb-memory" class="btn btn-outline-secondary">8GB unified
                                         memory</button>
                                     <button id="16gb-memory" class="btn btn-outline-secondary">16GB unified
@@ -53,7 +53,7 @@
                         <div class="row my-4">
                             <h6 class="fw-bold">Storage</h6>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12">
                                     <button id="256gb-storage" class="btn btn-outline-secondary">256GB SSD
                                         storage</button>
                                     <button id="512gb-storage" class="btn btn-outline-secondary">512GB SSD
@@ -66,7 +66,7 @@
                         <div class="row my-4">
                             <h6 class="fw-bold">Choose your delivery option</h6>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12">
                                     <button id="free-delivery" class="btn btn-outline-secondary">Friday, Aug 25 FREE
                                         Prime
                                         Delivery</button>
@@ -80,42 +80,50 @@
                     <!-- variant section end-->
 
                     <!-- pricing section start-->
-                    <section class="w-50 mt-5">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th>Best Price</th>
-                                    <td class="fw-bold">$<span id="base-price">1299</span></td>
-                                </tr>
-                                <tr>
-                                    <th>Extra Memory Cost</th>
-                                    <td class="fw-bold">$<span id="cost-memory">0</span></td>
-                                </tr>
-                                <tr>
-                                    <th>Extra Storage Cost</th>
-                                    <td class="fw-bold">$<span id="cost-storage">0</span></td>
-                                </tr>
-                                <tr>
-                                    <th>Delivery charge</th>
-                                    <td class="fw-bold">$<span id="cost-delivery">0</span></td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Total Price</th>
-                                    <td class="fw-bold">$<span id="total-price">1299</span></td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <section class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Best Price</th>
+                                            <td class="fw-bold">$<span id="base-price">1299</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Extra Memory Cost</th>
+                                            <td class="fw-bold">$<span id="cost-memory">0</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Extra Storage Cost</th>
+                                            <td class="fw-bold">$<span id="cost-storage">0</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Delivery charge</th>
+                                            <td class="fw-bold">$<span id="cost-delivery">0</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Total Price</th>
+                                            <td class="fw-bold">$<span id="total-price">1299</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
                     </section>
                     <!-- pricing section end-->
 
                     <!-- promo section start-->
-                    <section class="w-50 mt-5">
-                        <p>Add Promo Code</p>
-                        <div class="input-group mb-3">
-                            <input id="promo-input" class="form-control" type="text">
-                            <button id="promo-btn" class="btn btn-danger">Apply</button>
+                    <section class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>Add Promo Code</p>
+                                <div class="input-group mb-3">
+                                    <input id="promo-input" class="form-control" type="text">
+                                    <button id="promo-btn" class="btn btn-danger">Apply</button>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <!-- promo section end-->
