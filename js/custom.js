@@ -37,7 +37,7 @@ function extraProduct(category, price) {
     totalAmount()
 }
 
-// total section
+// total costing section
 function totalAmount() {
     const basePrice = parseInt(document.getElementById('base-price').innerText)
     const extraMemory = parseInt(document.getElementById('cost-memory').innerText)
