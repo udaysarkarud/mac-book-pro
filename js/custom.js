@@ -54,7 +54,8 @@ document.getElementById('promo-btn').addEventListener('click', function () {
     const promoInput = document.getElementById('promo-input')
     if (promoInput.value == 'stevekaku') {
         const grandTotal = document.getElementById('grand-total')
-        grandTotal.innerText = parseInt(grandTotal.innerText) - (parseInt(grandTotal.innerText) / 20)
+        const promoAmount = (parseInt(grandTotal.innerText) * 20) / 100
+        grandTotal.innerText = parseInt(grandTotal.innerText) - promoAmount
     }
     promoInput.value = ''
 
