@@ -1,34 +1,14 @@
-// Buttons for memory
-document.getElementById('8gb-memory').addEventListener('click', function () {
-    extraProduct('memory', 0)
-})
+// All Variant Buttons 
+const variantBtn = document.getElementsByClassName('btn-outline-secondary')
+for (const singleVariantBtn of variantBtn) {
+    singleVariantBtn.addEventListener('click', function () {
+        const varian = singleVariantBtn.id
+        const varianCatagory = varian.split('-')[1]
+        const varianValue = parseInt(singleVariantBtn.value)
+        extraProduct(varianCatagory, varianValue)
 
-document.getElementById('16gb-memory').addEventListener('click', function () {
-    extraProduct('memory', 180)
-})
-
-
-// Buttons for storage
-document.getElementById('256gb-storage').addEventListener('click', function () {
-    extraProduct('storage', 0)
-})
-
-document.getElementById('512gb-storage').addEventListener('click', function () {
-    extraProduct('storage', 100)
-})
-
-document.getElementById('1tb-storage').addEventListener('click', function () {
-    extraProduct('storage', 180)
-})
-
-// Buttons for delivery
-document.getElementById('free-delivery').addEventListener('click', function () {
-    extraProduct('delivery', 0)
-})
-
-document.getElementById('charged-delivery').addEventListener('click', function () {
-    extraProduct('delivery', 20)
-})
+    })
+}
 
 // Extra variant Price
 function extraProduct(category, price) {
