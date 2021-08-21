@@ -53,9 +53,11 @@ function totalAmount() {
 document.getElementById('promo-btn').addEventListener('click', function () {
     const promoInput = document.getElementById('promo-input')
     if (promoInput.value == 'stevekaku') {
-        const grandTotal = document.getElementById('grand-total')
-        const promoAmount = (parseInt(grandTotal.innerText) * 20) / 100
-        grandTotal.innerText = parseInt(grandTotal.innerText) - promoAmount
+        const getTotalCost = document.getElementById('total-price')
+        const getGrandTotal = document.getElementById('grand-total')
+
+        const promoAmount = (parseInt(getTotalCost.innerText) * 20) / 100
+        getGrandTotal.innerText = parseInt(getTotalCost.innerText) - promoAmount
     }
     promoInput.value = ''
 
